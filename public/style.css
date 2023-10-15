@@ -1,0 +1,26 @@
+body{
+    background-image: url(/assets/BG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+.center-div{
+    padding-top:10%;
+}
+#user{
+    color: #e27d69;
+}
+.btn.rounded-pill{
+    padding:.5em 2em;
+    background-color:#dec6bb;
+    color:black;
+}
+form{
+    padding: 0.3em;
+}
+#login .title>span{
+    font-size: 1em;
+}
+#loginput{
+    backdrop-filter: blur(10px);
+}

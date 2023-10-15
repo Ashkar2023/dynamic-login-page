@@ -1,0 +1,12 @@
+<%-include('header')-%>
+
+<div class="text-center center-div">
+    <div class="container w-25 border rounded-4 py-4">
+        <h6 class="">Successfully logged in!</h6>
+        <h1 class="text-light border border-2 rounded">Welcome Home</h1>
+        <h4 class="my-3 pt-1" id="user"><%= locals.user? user:"user" %></h4>
+        <a href="/logout"><button class="btn btn-light">Logout</button></a>
+    </div>
+</div>
+
+<%-include('footer')-%>

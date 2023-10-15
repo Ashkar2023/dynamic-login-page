@@ -1,0 +1,35 @@
+<%-include('header')-%>
+
+<div class="text-center center-div" id="login">
+    <div class="container border rounded-4 w-25 py-5" id="loginput">
+        <div class="title pb-3">
+            <h2 class="font-weight-bold">LOGIN</h2>
+            <% if(locals.login){%>
+                <span><%= locals.login %></span>
+            <% } %>
+        </div>
+        <% if(locals.alert){%>
+            <div class="alert border-0 rounded-pill alert-danger">
+                <%= locals.alert %>
+            </div>
+        <% } %>
+
+        <% if(locals.logout){%>
+            <div class="alert border-0 rounded-pill alert-success">
+                <%= locals.logout %>
+            </div>
+        <% } %>  
+         
+        <form action="/login" method="POST">
+            <div class="form-group mb-3">
+                <input type="email" class="form-control" placeholder="Email" value="admin@gmail.com" name="email" required>
+            </div>
+            <div class="form-group mb-3">
+                <input type="password" class="form-control" placeholder="Password" value="admin" name="password" required>
+            </div>
+            <button type="sumit" class="btn rounded-pill">Submit</button>
+        </form>
+    </div>
+</div>
+
+<%-include('footer')-%>
